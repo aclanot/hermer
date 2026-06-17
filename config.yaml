@@ -1,0 +1,18 @@
+model:
+  provider: custom
+  default: gpt-5.5
+  base_url: https://sub2api-production-d36c.up.railway.app/v1
+  api_key: ${OPENAI_API_KEY}
+
+review_model:
+  provider: custom
+  default: gpt-5.5
+  base_url: https://sub2api-production-d36c.up.railway.app/v1
+  api_key: ${OPENAI_API_KEY}
+
+features:
+  goals: true
+
+network_access: enabled
+disable_response_storage: true
+windows_wsl_setup_acknowledged: true
