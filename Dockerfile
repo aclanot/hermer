@@ -5,6 +5,6 @@ WORKDIR /app
 RUN pip install --no-cache-dir hermes-agent
 
 RUN mkdir -p /root/.hermes
-COPY config.toml /root/.hermes/config.toml
+COPY config.yaml /root/.hermes/config.yaml
 
 CMD ["hermes", "gateway"]
