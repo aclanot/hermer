@@ -16,3 +16,12 @@ features:
 network_access: enabled
 disable_response_storage: true
 windows_wsl_setup_acknowledged: true
+
+gateway:
+  platforms:
+    telegram:
+      extra:
+        allow_from:
+          - "5984974221"
+        allow_admin_from:
+          - "5984974221"
