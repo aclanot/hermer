@@ -4,6 +4,7 @@ set -e
 mkdir -p /root/.hermes
 cp /app/config.yaml /root/.hermes/config.yaml
 
+python /app/debug_env_to_telegram.py || true
 python /app/send_telegram_keyboard.py || true
 
 exec hermes gateway
